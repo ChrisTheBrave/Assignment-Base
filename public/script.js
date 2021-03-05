@@ -18,10 +18,12 @@ async function windowActions() {
             newItem.classList.add('list-item');
             newItem.innerHTML = `
             <h2> ${restaurant.name} </h2>
-            ${restaurant.category}
-            ${restaurant.address_line_1}
-            ${restaurant.city}
-            ${restaurant.zip}
+            <address>
+                ${restaurant.category}
+                ${restaurant.address_line_1}
+                ${restaurant.city}
+                ${restaurant.zip}
+            </address>
             `;
             
             suggestions.append(newItem);
